@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Apps List</string>
+    <string name="apps">Приложения</string>
+    <string name="app_search">Поиск приложений</string>
+    <string name="receiving_app_list">Получение списка приложений</string>
+    <string name="name">Название</string>
+    <string name="version">Версия</string>
+    <string name="packageName">Имя пакета</string>
+    <string name="no_data">Нет данных</string>
+    <string name="checksum_md5">Контрольная сумма (MD5)</string>
+    <string name="calculation_in_progress">Идет рассчет…</string>
+    <string name="open_app">Открыть приложение</string>
+</resources>
