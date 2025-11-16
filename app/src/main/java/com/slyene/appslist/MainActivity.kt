@@ -46,7 +46,9 @@ class MainActivity : ComponentActivity() {
                                 onNavigateToDetail = navController::navigateToAppDetail
                             )
 
-                            appDetailScreen()
+                            appDetailScreen(
+                                onNavigateUp = navController::navigateUp
+                            )
                         }
 
                         Box(

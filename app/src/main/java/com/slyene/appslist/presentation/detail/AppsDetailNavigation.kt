@@ -18,14 +18,17 @@ fun NavController.navigateToAppDetail(
     navigate(AppDetail(packageName))
 }
 
-fun NavGraphBuilder.appDetailScreen() {
+fun NavGraphBuilder.appDetailScreen(
+    onNavigateUp: () -> Unit
+) {
     composable<AppDetail> { backStackEntry ->
         val appDetail = backStackEntry.toRoute<AppDetail>()
         AppDetailRoot(
             viewModel = viewModel(
                 factory = AppsViewModelFactory(LocalContext.current.applicationContext)
             ),
-            packageName = appDetail.packageName
+            packageName = appDetail.packageName,
+            onNavigateUp = onNavigateUp,
         )
     }
 }
